@@ -24,13 +24,53 @@
   </div>
 
   <div class="page-content">
+    
+    <div class="add-overlay">
+
+      <div class="add-controls">
+        <h1>Add Book</h1>
+        <form action="" method="post">
+          <div>
+            <label for="author">* Author</label>
+            <input type="text" id="author" placeholder="Author" required>
+          </div>
+          <div>
+            <label for="title">* Title</label>
+            <input type="text" id="title" placeholder="Title" required>
+          </div>
+          <div>
+            <label for="pages">* Number of Pages</label>
+            <input type="number" id="pages" min="1" max="2000" placeholder="Page Count" required>
+          </div>
+          <div>
+            <label for="year">* Publication Year</label>
+            <input type="number" id="year" min="1" max="2022" placeholder="Year Published" value="2022" required>
+          </div>
+          <div class="checkbox-wrapper">
+            <label for="read">* Have you finished reading this book?</label>
+            <input type="checkbox" id="read">
+          </div>
+          <p class="required-message">* Please fill out all fields!</p>
+          <div class="control-buttons">
+            <button class="submit" type="button">Add</button>
+            <button class="cancel" type="button">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
     <div class="main-content">
       
     </div>
 
     <div class="sidebar">
 
-      <button class="add-button">Add Book <br> <img src="./assets/book-plus.png" alt=""></button>
+      <button class="button-control add-button">Add Book <br> <img src="./assets/book-plus.png" alt=""></button>
+
+      <button class="button-control sort-button">Sort Books <br> <img src="./assets/book-alphabet.png" alt=""></button>
+
+      <button class="button-control clear-button">Clear Library <br> <img src="./assets/book-remove-multiple.png" alt=""></button>
 
     </div>
   </div>
@@ -38,7 +78,11 @@
   <div class="footer">
     Created by: 
     <a href="https://github.com/sorrrb">
-     sorrrb <img src="./assets/github.png" alt="">
+     sorrrb 
+     <div class="media-container">
+       <img src="./assets/github.png" alt="">
+       <div class="overlay"></div>
+     </div>
     </a>
   </div>
   
