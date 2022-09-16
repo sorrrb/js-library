@@ -10,16 +10,18 @@ const modalCancel = document.querySelector('button.cancel');
 
 const alertMessage = document.querySelector('p.required-message');
 
-function Book(author, title, pages, year, read) {
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.year = year;
-  this.read = read;
-}
+class Book {
+  constructor(author, title, pages, year, read) {
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.year = year;
+    this.read = read;
+  }
 
-Book.prototype.changeStatus = function () {
-  this.read = !(this.read);
+  changeStatus() {
+    this.read = !(this.read);
+  }
 }
 
 function addBookToLibrary() {
