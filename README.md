@@ -1,4 +1,4 @@
-# js-library
+# library
 A webpage implementation of a basic library app<br>
 
 [Live Demo](https://sorrrb.github.io/js-library/)
